@@ -26,13 +26,14 @@ function App() {
     <div className="App h-screen text-white"
  style={{ background: 'url(https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png)' }}>
       <ShowButton onClick={() => setAdShow(true)}/>
-      <div style={{ display: adShow ? "" : "none" }} className="flex flex-col h-full items-center justify-center backdrop-filter backdrop-blur-lg">
+      <div
+        className="flex flex-col h-full items-center justify-center backdrop-filter backdrop-blur-lg"
+        style={{ display: adShow ? "" : "none" }}>
         <div className="w-1/2 h-1/2">
           <Adsense
             client="ca-pub-5006765521801507"
             slot="6935948671"
             format=""
-            className="w-1/2 h-1/2"
           />
         </div>
         <CloseButton onClick={() => setAdShow(false)} />
