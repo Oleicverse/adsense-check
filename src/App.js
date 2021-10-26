@@ -34,6 +34,7 @@ function App() {
             client="ca-pub-5006765521801507"
             slot="6935948671"
             format=""
+            className="w-full h-full"
           />
         </div>
         <CloseButton onClick={() => setAdShow(false)} />
