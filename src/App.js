@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { Adsense } from '@ctrl/react-adsense';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App h-screen">
+      <div className="flex flex-col h-full items-center justify-center">
+        <div>
+          <Adsense
+            client="ca-pub-5006765521801507"
+            slot="6935948671"
+            style={{ width: 500, height: 300 }}
+            format=""
+          />
+        </div>
+
+      </div>
     </div>
   );
 }
