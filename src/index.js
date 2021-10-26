@@ -3,6 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { showAd, hideAd } from './events'
+
+window.showAd = showAd
+window.hideAd = hideAd
+
+const addAdSenseScript = () => {
+  const script = document.createElement('script')
+  script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5006765521801507"
+  script.crossorigin = "anonymous"
+  script.async = true
+  document.getElementsByTagName('head')[0].appendChild(script)
+}
+
+addAdSenseScript()
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +25,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
