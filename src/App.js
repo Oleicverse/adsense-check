@@ -5,10 +5,14 @@ import { gameEventsEmiiter } from './events'
 
 
 function App() {
-  const [adShow, setAdShow] = useState(false)
+  const [adShow, setAdShow] = useState(true)
+  const [showButton, setShowButton] = useState(false)
 
   useEffect(() => {
-    const onShowAd = () => setAdShow(true)
+    const onShowAd = () => {
+      setAdShow(true)
+      setShowButton(true)
+    }
     const onHideAd = () => setAdShow(false)
     gameEventsEmiiter.addListener("showAd", onShowAd)
     gameEventsEmiiter.addListener("hideAd", onHideAd)
@@ -34,7 +38,10 @@ function App() {
         </div>
         <button
           onClick={() => setAdShow(false)}
-          style={{ background: 'blue' }}
+          style={{
+            background: 'blue',
+            display: showButton ? "" : "none"
+          }}
         >
           Close this Ad
         </button>
