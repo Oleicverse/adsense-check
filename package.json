@@ -1,6 +1,7 @@
 {
   "name": "adsense-check",
   "version": "0.1.0",
+  "homepage": "http://oleic.co",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.0",
@@ -9,6 +10,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "autoprefixer": "^9",
+    "gh-pages": "^3.2.3",
     "postcss": "^7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -18,6 +20,8 @@
   },
   "scripts": {
     "start": "craco start",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
