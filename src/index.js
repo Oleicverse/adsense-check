@@ -32,3 +32,7 @@ const observeAdAvailable = () => {
 }
 
 observeAdAvailable()
+
+window.gameOver = () => {
+  showAd()
+}
