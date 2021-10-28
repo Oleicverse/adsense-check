@@ -1,4 +1,3 @@
-import './App.css';
 import { Adsense } from '@ctrl/react-adsense';
 import { useEffect, useState } from 'react';
 import { gameEventsEmiiter } from './events'

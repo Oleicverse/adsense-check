@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { showAd, hideAd } from './events'
 
 window.showAd = showAd
@@ -16,7 +15,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-reportWebVitals();
 
 const observeAdAvailable = () => {
   var watchAdFilledElem = document.getElementsByTagName("ins")[0]
