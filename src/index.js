@@ -32,5 +32,10 @@ const observeAdAvailable = () => {
 observeAdAvailable()
 
 window.gameOver = () => {
+  console.log("WINDOW.GAMEOVER CALLED FROM THE GAME TRIGGERING AD")
   showAd()
+}
+
+window.gameStart = () => {
+  console.log("WINDOW.GAMESTART CALLED FROM THE GAME")
 }

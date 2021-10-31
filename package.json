@@ -1,7 +1,7 @@
 {
   "name": "adsense-check",
   "version": "0.1.0",
-  "homepage": "http://oleic.co",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.0",
